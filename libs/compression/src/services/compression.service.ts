@@ -2,7 +2,7 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 
 @Injectable()
 export class CompressionService {
-  constructor() {}
+  public constructor() {}
 
   public async compressImage() {
     try {

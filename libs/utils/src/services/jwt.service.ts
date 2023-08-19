@@ -6,7 +6,7 @@ import { JwtConfig } from '../interfaces';
 
 @Injectable()
 export class JwtLibService {
-  constructor(
+  public constructor(
     private readonly configService: ConfigService,
     private readonly jwtService: JwtService,
   ) {}

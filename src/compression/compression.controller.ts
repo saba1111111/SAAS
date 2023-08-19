@@ -4,7 +4,8 @@ import { Controller, Post, UseGuards } from '@nestjs/common';
 
 @Controller('compression')
 export class CompressionController {
-  constructor(private readonly compressionService: CompressionService) {}
+  public constructor(private readonly compressionService: CompressionService) {}
+
   @UseGuards(CompressionAccessGuard)
   @Post('/')
   public async compressImage() {

@@ -6,7 +6,7 @@ import { PlanRepository } from '../interfaces/plan-repository.interface';
 
 @Injectable()
 export class PlanService {
-  constructor(
+  public constructor(
     @Inject(SEQUILIZE_PLAN_REPO_TOKEN)
     private readonly plainRepository: PlanRepository,
   ) {}

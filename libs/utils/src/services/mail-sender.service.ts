@@ -6,7 +6,7 @@ import * as nodemailer from 'nodemailer';
 export class MailSenderService {
   private transporter: nodemailer.Transporter;
 
-  constructor(private readonly configService: ConfigService) {
+  public constructor(private readonly configService: ConfigService) {
     const user = this.configService.get<string>('EMAIL');
     const pass = this.configService.get<string>('EMAIL_PASSWORD');
 

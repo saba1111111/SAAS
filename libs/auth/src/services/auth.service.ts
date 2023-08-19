@@ -22,7 +22,7 @@ import { forgotPasswordVerifyDto } from '../dtos';
 
 @Injectable()
 export class AuthService {
-  constructor(
+  public constructor(
     private readonly accountService: AccountService,
     private readonly cryptoService: CryptoService,
     private readonly mailSenderService: MailSenderService,

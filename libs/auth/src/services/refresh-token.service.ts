@@ -7,7 +7,7 @@ import { SEQUILIZE_REFRESH_TOKEN_REPO } from '@app/common';
 
 @Injectable()
 export class RefreshTokenService {
-  constructor(
+  public constructor(
     @Inject(SEQUILIZE_REFRESH_TOKEN_REPO)
     private readonly refreshTokenRepository: RefreshTokenRepository,
     private readonly jwtService: JwtLibService,

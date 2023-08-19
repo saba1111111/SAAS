@@ -23,7 +23,7 @@ import { SubscriptionModel } from '../entities/subscription.entity';
 
 @Injectable()
 export class SubscriptionService {
-  constructor(
+  public constructor(
     @Inject(SEQUILIZE_SUBSCRIPTION_REPO_TOKEN)
     private readonly subscriptionRepository: SubscriptionRepository,
     private readonly plansServie: PlanService,

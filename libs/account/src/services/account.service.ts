@@ -16,7 +16,7 @@ import { AccountRepository } from '../interfaces';
 
 @Injectable()
 export class AccountService {
-  constructor(
+  public constructor(
     @Inject(SEQUILIZE_ACCOUNT_REPO_TOKEN)
     private readonly accountRepository: AccountRepository,
     private readonly cryptoService: CryptoService,

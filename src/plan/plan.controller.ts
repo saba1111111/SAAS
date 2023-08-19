@@ -11,7 +11,7 @@ import { Controller, Post, UseGuards, Request, Body } from '@nestjs/common';
 
 @Controller('plan')
 export class PlanController {
-  constructor(private readonly planService: PlanService) {}
+  public constructor(private readonly planService: PlanService) {}
 
   @Roles(AccountRoles.ADMIN)
   @UseGuards(AccessTokenGuard, RolesGuard)

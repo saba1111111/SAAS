@@ -20,7 +20,7 @@ import { CreateSubscriptionTokenDto } from '../dtos';
 
 @Injectable()
 export class SubscriptionTokenService {
-  constructor(
+  public constructor(
     @Inject(SEQUILIZE_SUBSCRIPTION_TOKEN_REPO_TOKEN)
     private readonly subscriptionTokenRepository: SubscriptionTokenRepository,
     private readonly cryptoService: CryptoService,

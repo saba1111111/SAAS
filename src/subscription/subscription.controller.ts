@@ -8,7 +8,7 @@ import { Controller, Post, UseGuards, Request, Body } from '@nestjs/common';
 
 @Controller('subscription')
 export class SubscriptionController {
-  constructor(
+  public constructor(
     private readonly subscriptionService: SubscriptionService,
     private readonly subscriptionTokenService: SubscriptionTokenService,
   ) {}
