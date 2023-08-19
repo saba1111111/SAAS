@@ -1,0 +1,33 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/lib/(.*)": "<rootDir>/../libs/lib/src/$1",
+    "@app/lib": "<rootDir>/../libs/lib/src",
+    "@app/auth/(.*)": "<rootDir>/../libs/auth/src/$1",
+    "@app/auth": "<rootDir>/../libs/auth/src",
+    "@app/account/(.*)": "<rootDir>/../libs/account/src/$1",
+    "@app/account": "<rootDir>/../libs/account/src",
+    "@app/plan/(.*)": "<rootDir>/../libs/plan/src/$1",
+    "@app/plan": "<rootDir>/../libs/plan/src",
+    "@app/redis/(.*)": "<rootDir>/../libs/redis/src/$1",
+    "@app/redis": "<rootDir>/../libs/redis/src",
+    "@app/subscription/(.*)": "<rootDir>/../libs/subscription/src/$1",
+    "@app/subscription": "<rootDir>/../libs/subscription/src",
+    "@app/utils/(.*)": "<rootDir>/../libs/utils/src/$1",
+    "@app/utils": "<rootDir>/../libs/utils/src",
+    "@app/common/(.*)": "<rootDir>/../libs/common/src/$1",
+    "@app/common": "<rootDir>/../libs/common/src",
+    "@app/compression/(.*)": "<rootDir>/../libs/compression/src/$1",
+    "@app/compression": "<rootDir>/../libs/compression/src"
+  }
+}

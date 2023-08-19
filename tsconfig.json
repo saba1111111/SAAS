@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/lib": ["libs/lib/src"],
+      "@app/lib/*": ["libs/lib/src/*"],
+      "@app/auth": ["libs/auth/src"],
+      "@app/auth/*": ["libs/auth/src/*"],
+      "@app/account": ["libs/account/src"],
+      "@app/account/*": ["libs/account/src/*"],
+      "@app/plan": ["libs/plan/src"],
+      "@app/plan/*": ["libs/plan/src/*"],
+      "@app/redis": ["libs/redis/src"],
+      "@app/redis/*": ["libs/redis/src/*"],
+      "@app/subscription": ["libs/subscription/src"],
+      "@app/subscription/*": ["libs/subscription/src/*"],
+      "@app/utils": ["libs/utils/src"],
+      "@app/utils/*": ["libs/utils/src/*"],
+      "@app/common": ["libs/common/src"],
+      "@app/common/*": ["libs/common/src/*"],
+      "@app/compression": ["libs/compression/src"],
+      "@app/compression/*": ["libs/compression/src/*"]
+    }
+  }
+}
