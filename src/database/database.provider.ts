@@ -13,12 +13,12 @@ export const databaseProviders = [
     provide: SEQUELIZE_TOKEN,
     useFactory: async (config: ConfigService) => {
       const sequelize = new Sequelize({
-        dialect: config.get('DB_DIALECT') as Dialect,
-        host: config.get('DB_HOST'),
-        port: config.get('DB_PORT'),
-        username: config.get('DB_USERNAME'),
-        password: config.get('DB_PASSWORD'),
-        database: config.get('DB_DATABASE'),
+        dialect: config.get('POSTGRES_DIALECT') as Dialect,
+        host: config.get('POSTGRES_HOST'),
+        port: config.get('POSTGRES_PORT'),
+        username: config.get('POSTGRES_USER'),
+        password: config.get('POSTGRES_PASSWORD'),
+        database: config.get('POSTGRES_DB'),
       });
       sequelize.addModels([
         AccountModel,
