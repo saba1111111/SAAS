@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import Redis from 'ioredis';
+import Redis, { RedisKey, RedisValue } from 'ioredis';
 
 @Injectable()
 export class RedisRepository {
@@ -13,14 +13,14 @@ export class RedisRepository {
     });
   }
 
-  public async findOne(key: string): Promise<string | null> {
+  public async findOne(key: RedisKey): Promise<string | null> {
     return await this.redisClient.get(key);
   }
 
   public async create(
-    key: string,
-    value: string,
-    expireTime?: number,
+    key: RedisKey,
+    value: RedisValue,
+    expireTime?: string | number,
   ): Promise<string> {
     if (expireTime != undefined) {
       return this.redisClient.set(key, value, 'EX', expireTime);
